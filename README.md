@@ -65,9 +65,14 @@ Use **HammerSpoon** to map keys and perform window management
 
 ## Shell
 
+Dot Files:
+- zsh/.zshrc
+- zsh/.oh-my-zsh
+
 References:
 [Shell](200~https://www.cyberciti.biz/tips/how-do-i-find-out-what-shell-im-using.html)
 [Install ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 [Install OMZ](https://github.com/ohmyzsh/ohmyzsh)
+[OMZ Alias](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet)
 [PowerLevel9k Theme](https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#option-2-install-awesome-powerline-fonts)
 
