@@ -76,7 +76,7 @@ set wildmode=longest,list,full
 set mouse=a
 
 " keyboard shortcuts
-let mapleader = ','
+let mapleader = ';'
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
@@ -100,6 +100,7 @@ cnoremap w!! %!sudo tee > /dev/null %
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
+let g:NERDTreeShowHidden=1
 let g:gitgutter_enabled = 0
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
