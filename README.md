@@ -30,6 +30,15 @@ Alternatives
 
 [Install Kinto](https://github.com/rbreaves/kinto)
 
+### Vim 
+
+```
+# Run command in Vim to install plugins (Vundle)
+:PluginInstall
+
+```
+
+
 ### Linux Key Mappings
 
 Use **Xmodmap**
