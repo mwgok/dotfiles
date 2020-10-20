@@ -17,6 +17,11 @@ remap({'ctrl'}, 'h', pressFn('left'))
 remap({'ctrl'}, 'j', pressFn('down'))
 remap({'ctrl'}, 'k', pressFn('up'))
 remap({'ctrl'}, 'l', pressFn('right'))
+remap({'ctrl'}, 'H', pressFn('home'))
+remap({'ctrl'}, 'J', pressFn('pagedown'))
+remap({'ctrl'}, 'K', pressFn('pageup'))
+remap({'ctrl'}, 'L', pressFn('end'))
+
 remap({'ctrl',"shift"}, 'h', pressFn('home'))
 remap({'ctrl',"shift"}, 'l', pressFn('end'))
 
@@ -48,3 +53,4 @@ hs.hotkey.bind({"ctrl","alt", "cmd"}, "Left", function()
   f.h = max.h
   win:setFrame(f)
 end)
+
