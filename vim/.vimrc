@@ -27,6 +27,9 @@ vmap <C-v> p
 nmap U <C-r>
 vmap U <C-r>
 
+" overide/Delete without copy (use x for cut)
+nnoremap d "_d
+
 " enable syntax highlighting
 syntax enable
 
@@ -75,8 +78,13 @@ set wildmode=longest,list,full
 " Enable basic mouse behavior such as resizing buffers.
 set mouse=a
 
-" keyboard shortcuts
+" custom/keyboard shortcuts (active usage)
 let mapleader = ';'
+nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>w <C-w>
+nnoremap <leader>f :CtrlP<CR>
+
+" keyboard shortcuts
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
@@ -84,9 +92,6 @@ noremap <C-l> <C-w>l
 noremap <leader>l :Align
 nnoremap <leader>a :Ag<space>
 nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>d :NERDTreeToggle<CR>
-nnoremap <leader>f :NERDTreeFind<CR>
-nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>T :CtrlPClearCache<CR>:CtrlP<CR>
 nnoremap <leader>] :TagbarToggle<CR>
 nnoremap <leader><space> :call whitespace#strip_trailing()<CR>

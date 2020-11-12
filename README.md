@@ -12,7 +12,7 @@ ln -nfs ~/Developer/dotfiles/xmodmap/.xmodmap ~/.xmodmap #symlinks
 Compiling custom key mappings to use across OS and tools. 
 
 ```
-CapsLock : ~Esc~ Ctrl (<Ctrl+[> for Esc)
+CapsLock : ~Esc~ Ctrl (`Ctrl+[` for Esc)
 
 Modifer + _ 
   H : Home
