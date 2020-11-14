@@ -12,8 +12,14 @@ ln -nfs ~/Developer/dotfiles/xmodmap/.xmodmap ~/.xmodmap #symlinks
 Compiling custom key mappings to use across OS and tools. 
 
 ```
-CapsLock : ~Esc~ Ctrl (`Ctrl+[` for Esc)
+# Prefer CapsLock to be Escape which is more used than Ctrl and far easier than Ctrl+[
+CapsLock : Esc 
 
+# To keep usage consistent on different OS, rely on custom shortcuts instead of Ctrl/Cmd
+# Note: This does however limit usage of ctrl during INS mode - as of now, still worth it.
+Ctrl+Keys : <leader>+customKeys 
+
+# Custom Shortucts that are more meaningful to me than the defaults
 Modifer + _ 
   H : Home
   J : PgDn
@@ -24,6 +30,10 @@ Modifer + _
   j : DownArrow
   k : UpArrow
   l : RightArrow
+
+  <leader>d : Open directory view
+  <leader>f : Search
+  <leader>w : Window Managment
 ```
 
 Alternatives
