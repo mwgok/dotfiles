@@ -81,6 +81,7 @@ set mouse=a
 " custom/keyboard shortcuts (active usage)
 let mapleader = ';'
 nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>dd :NERDTreeFind<CR>
 nnoremap <leader>w <C-w>
 nnoremap <leader>f :CtrlP<CR>
 
