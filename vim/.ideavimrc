@@ -1,0 +1,29 @@
+" custom/Home End PgUp PgDn
+vmap H ^
+vmap L $
+vmap K <C-u>
+vmap J <C-d>
+nmap H ^
+nmap L $
+nmap K <C-u>
+nmap J <C-d>
+
+" custom/select all
+vmap <C-a> ggVG
+nmap <C-a> ggVG
+
+" custom/copy-paste
+vmap <C-c> y
+vmap <C-v> p
+
+" custom/redo
+nmap U <C-r>
+vmap U <C-r>
+
+" overide/Delete without copy (use x for cut)
+nnoremap d "_d
+
+" keyboard shortcuts
+let mapleader = ';'
+noremap <leader>w <C-w>
+

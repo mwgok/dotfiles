@@ -80,15 +80,14 @@ set mouse=a
 
 " custom/keyboard shortcuts (active usage)
 let mapleader = ';'
-nnoremap <leader>d :NERDTreeToggle<CR>
 nnoremap <leader>w <C-w>
+
+" custom/keyboard shortcuts (active plugins used)
+nnoremap <leader>d :NERDTreeToggle<CR>
+nnoremap <leader>dd :NERDTreeFind<CR>
 nnoremap <leader>f :CtrlP<CR>
 
 " keyboard shortcuts
-noremap <C-h> <C-w>h
-noremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-noremap <C-l> <C-w>l
 noremap <leader>l :Align
 nnoremap <leader>a :Ag<space>
 nnoremap <leader>b :CtrlPBuffer<CR>
