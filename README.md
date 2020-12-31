@@ -34,6 +34,7 @@ Modifer + _
   <leader>d : Open directory view
   <leader>f : Search
   <leader>w : Window Managment
+  <leader>j : Jumps
 ```
 
 Alternatives
