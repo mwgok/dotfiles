@@ -6,12 +6,14 @@ export ZSH=$HOME/.oh-my-zsh
 export JAVA_HOME="$HOME/Software/Android Studio/android-studio-4/android-studio/jre"
 export GCLOUD="$HOME/Developer/SDK/google-cloud-sdk/bin/"
 export ANDROID_PLATFORM_TOOLS="$HOME/Developer/SDK/Android/Sdk/platform-tools"
-export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME:$GCLOUD:$ANDROID_PLATFORM_TOOLS:$PATH
+export NODE_PATH="$HOME/Developer/SDK/Node/bin"
+export PATH=$HOME/bin:/usr/local/bin:$JAVA_HOME:$GCLOUD:$ANDROID_PLATFORM_TOOLS:$NODE_PATH:$PATH
 
 # UBUNTU SPECIFIC
 #alias pbcopy='xclip -selection clipboard'
 #alias pbpaste='xclip -selection clipboard -o'
-alias as="sh $HOME/Software/Android\ Studio/android-studio/bin/studio.sh"
+alias as="sh $HOME/Software/Android\ Studio/android-studio-4/android-studio/bin/studio.sh"
+alias ij="sh $HOME/Software/IntelliJ\ Ultimate/idea-IU-203.5981.155/bin/idea.sh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -22,7 +24,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+    POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 # Add a space in the first prompt
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
