@@ -1,4 +1,8 @@
 " custom/Home End PgUp PgDn
+nmap H ^
+nmap L $
+nmap K <C-u>
+nmap J <C-d>
 vmap H ^
 vmap L $
 vmap K <C-u>
@@ -10,6 +14,7 @@ vmap U <C-r>
 
 " overide/Delete without copy (use x for cut)
 nnoremap d "_d
+vnoremap d "_d
 
 let mapleader = ';'
 " leader - window management
