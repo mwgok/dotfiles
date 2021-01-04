@@ -22,3 +22,6 @@ noremap <leader>w <C-w>
 " leader - jump
 noremap <leader>J <C-i>
 noremap <leader>j <C-o>
+" leader global copy/paste
+noremap <leader>y "gy
+noremap <leader>p "gp
