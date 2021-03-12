@@ -4,12 +4,17 @@ This is a compilation of my dot files.
 
 ### Setup
 
-Commands:
+Symlink Commands:
 ```
-# Symlinks
+# ZSH
 ln -nfs ~/Developer/dotfiles/zsh/.zshrc ~/.zshrc
 ln -nfs ~/Developer/dotfiles/zsh/.oh-my-zsh ~/.oh-my-zsh
 ln -nfs ~/Developer/dotfiles/zsh/.zshrc_local_linux ~/.zshrc_local_linux
+ln -nfs ~/Developer/dotfiles/zsh/mewi-custom.zsh-theme ~/.oh-my-zsh/custom/themes/mewi-custom.zsh-theme
+
+# Vim
+ln -nfs ~/Developer/dotfiles/vim/.vimrc ~/.vimrc
+ln -nfs ~/Developer/dotfiles/vim/.vimrc.bundles ~/.vimrc.bundles
 ```
 
 ## Key Mapping
@@ -48,6 +53,7 @@ Use **HammerSpoon** to map keys and perform window management
 
 ### Vim Key Mappings
 
+**Customisation**
 ```
 # To keep usage consistent on different OS, rely on custom shortcuts instead of Ctrl/Cmd
 Ctrl+Keys : <leader>+customKeys
@@ -69,6 +75,15 @@ Modifer + _
   <leader>w : Window Managment
   <leader>j : Jumps
 ```
+
+**Setup:**
+- Update Vim (Linux: `sudo apt install vim`)
+- Install [Vundle](https://github.com/VundleVim/Vundle.vim) and run `:PluginInstall`
+
+**Vim key-binding Plugins:**
+- Vimium for Chrome
+- IdeaVim for Jetbrains
+- vim-mode for Atom
 
 ## Terminal
 
