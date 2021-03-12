@@ -1,26 +1,59 @@
 ## Introduction
 
-This is a compilation of my dot files. 
+This is a compilation of my dot files.
+
+### Setup
 
 Commands:
 ```
-ln -nfs ~/Developer/dotfiles/xmodmap/.xmodmap ~/.xmodmap #symlinks
+# Symlinks
+ln -nfs ~/Developer/dotfiles/zsh/.zshrc ~/.zshrc
+ln -nfs ~/Developer/dotfiles/zsh/.oh-my-zsh ~/.oh-my-zsh
+ln -nfs ~/Developer/dotfiles/zsh/.zshrc_local_linux ~/.zshrc_local_linux
 ```
 
-## Key Mappings
+## Key Mapping
 
-Compiling custom key mappings to use across OS and tools. 
+### Keyboard
+
+Compiling custom key mappings to use across OS and tools.
 
 ```
-# Prefer CapsLock to be Escape which is more used than Ctrl and far easier than Ctrl+[
-CapsLock : Esc 
+# Remap Modifiers to match the Apple Keyboard
+Linux:    [Super/Pop][Alt][Ctrl]
+Windows:  [Windows][Alt][Ctrl]
+Mac:      [Ctrl][Alt][Cmd]
 
+# CapsLock is an additional Escape (Fun Fact: `Ctrl+[` is Esc)
+CapsLock : Esc
+
+```
+
+### Linux Key Mappings
+
+Instead, use [Gnome-Tweaks](https://itsfoss.com/gnome-tweak-tool)
+
+Used to struggle with **Xmodmap**:
+```
+xmodmap ~/.xmodmap # Apply custom key mappings
+
+xev # Find out keycode of mouse clicks or keyboard keys
+
+```
+
+### MacOs Key Mappings
+
+Use **HammerSpoon** to map keys and perform window management
+
+
+### Vim Key Mappings
+
+```
 # To keep usage consistent on different OS, rely on custom shortcuts instead of Ctrl/Cmd
-# Note: This does however limit usage of ctrl during INS mode - as of now, still worth it.
-Ctrl+Keys : <leader>+customKeys 
+Ctrl+Keys : <leader>+customKeys
 
 # Custom Shortucts that are more meaningful to me than the defaults
-Modifer + _ 
+Modifer + _
   H : Home
   J : PgDn
   K : PgUp
@@ -37,62 +70,25 @@ Modifer + _
   <leader>j : Jumps
 ```
 
-Alternatives
+## Terminal
 
-[Install Kinto](https://github.com/rbreaves/kinto)
+**Software:**
+- Mac: ITerm
+- Ubuntu: Guake
+- PopOS: GNOME Terminal
 
-### Setup Vim 
-
-```
-# Run command in Vim to install plugins (Vundle)
-:PluginInstall
-
-```
-
-
-### Linux Key Mappings
-
-Use **Xmodmap**
-
-```
-xmodmap ~/.xmodmap # Apply custom key mappings
-
-xev # Find out keycode of mouse clicks or keyboard keys
-
-```
-**Note**: Do not confuse `~/.Xmodmap` with `~/.xmodmap`.
-
-**Quick Reference**
-Columns
-```
-Key
-Shift+Key
-mode_switch+Key
-mode_switch+Shift+Key
-AltGr+Key
-AltGr+Shift+Key
-```
-
-Sample
-```
-keysym h = h H Left
-```
-
-### MacOs Key Mappings
-
-Use **HammerSpoon** to map keys and perform window management
-
+**Styling:**
+- Font / Jetbrains Mono
+- Text & Background Color Scheme / Solaris Dark
+- Palette / Solarised
 
 ## Shell
 
-Dot Files:
+**Dot Files:**
 - zsh/.zshrc
 - zsh/.oh-my-zsh
 
-References:
-[Shell](200~https://www.cyberciti.biz/tips/how-do-i-find-out-what-shell-im-using.html)
-[Install ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
-[Install OMZ](https://github.com/ohmyzsh/ohmyzsh)
-[OMZ Alias](https://github.com/ohmyzsh/ohmyzsh/wiki/Cheatsheet)
-[PowerLevel9k Theme](https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions#option-2-install-awesome-powerline-fonts)
-
+**Setup**
+- [Shell](200~https://www.cyberciti.biz/tips/how-do-i-find-out-what-shell-im-using.html)
+- [Install ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+- [Install OMZ](https://github.com/ohmyzsh/ohmyzsh)
