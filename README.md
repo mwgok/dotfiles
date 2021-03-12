@@ -13,6 +13,7 @@ ln -nfs ~/Developer/dotfiles/zsh/.zshrc_local_linux ~/.zshrc_local_linux
 ln -nfs ~/Developer/dotfiles/zsh/mewi-custom.zsh-theme ~/.oh-my-zsh/custom/themes/mewi-custom.zsh-theme
 
 # Vim
+ln -nfs ~/Developer/dotfiles/vim/.ideavimrc ~/.ideavimrc
 ln -nfs ~/Developer/dotfiles/vim/.vimrc ~/.vimrc
 ln -nfs ~/Developer/dotfiles/vim/.vimrc.bundles ~/.vimrc.bundles
 ```
