@@ -1,1 +1,12 @@
-export ZSH="/home/metalwihen/.oh-my-zsh"
+# ZSH
+export ZSH="$HOME/.oh-my-zsh"
+
+# SOFTWARE
+export ANDROID_STUDIO="$HOME/Software/android-studio/bin"
+alias as="$ANDROID_STUDIO/studio.sh"
+
+# PATH
+export JDK="$HOME/Software/android-studio/jre"
+export ANDROID_SDK="$HOME/Software/SDKs/AndroidSdk"
+export PATH=$HOME/bin:/usr/local/bin:$JDK:$ANDROID_SDK:$PATH
+
