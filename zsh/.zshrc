@@ -1,4 +1,4 @@
-ZSH_THEME="agnoster"
+ZSH_THEME="mewi-custom"
 
 plugins=(git)
 
