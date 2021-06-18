@@ -16,6 +16,7 @@ ln -nfs ~/Developer/dotfiles/zsh/mewi-custom.zsh-theme ~/.oh-my-zsh/custom/theme
 ln -nfs ~/Developer/dotfiles/vim/.ideavimrc ~/.ideavimrc
 ln -nfs ~/Developer/dotfiles/vim/.vimrc ~/.vimrc
 ln -nfs ~/Developer/dotfiles/vim/.vimrc.bundles ~/.vimrc.bundles
+ln -nfs ~/Developer/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ```
 
 ## Key Mapping
@@ -51,6 +52,9 @@ xev # Find out keycode of mouse clicks or keyboard keys
 
 Use **HammerSpoon** to map keys and perform window management
 
+### Tmux Key Mappings
+
+* [Minimalistic Guide to Tmux](https://medium.com/actualize-network/a-minimalist-guide-to-tmux-13675fb160fa)
 
 ### Vim Key Mappings
 
@@ -108,3 +112,7 @@ Modifer + _
 - [Shell](200~https://www.cyberciti.biz/tips/how-do-i-find-out-what-shell-im-using.html)
 - [Install ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 - [Install OMZ](https://github.com/ohmyzsh/ohmyzsh)
+
+## Ideas for next time
+
+- [CapsLock as Esc And Ctrl](https://askubuntu.com/questions/177824/remapping-caps-lock-to-control-and-escape-not-the-usual-way)
